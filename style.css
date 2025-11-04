@@ -1061,7 +1061,7 @@ button {
 
     .box2 {
         top: 30%;
-        right: -40%;
+        right: -37%;
     }
 
     .btn i {
@@ -1095,4 +1095,11 @@ button {
     }
 
 
+}
+
+@media (max-width: 380px){
+    .box2 {
+        top: 30%;
+        right: -43%;
+    }
 }
