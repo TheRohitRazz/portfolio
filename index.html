@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<!-- <style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+        /* background: #FFDB67; */
+    }
+
+    #main {
+        width: 100%;
+        height: auto;
+        position: relative;
+        /* z-index: -1; */
+    }
+
+    .box2 {
+        top: 20%;
+        right: -10%;
+        position: fixed;
+        min-width: 200px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        transition: .5s;
+        z-index: 99;
+    }
+
+    .box2.active {
+        right: 0;
+    }
+
+    .btn i {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: rgb(255, 255, 255);
+        padding: 1vw;
+        font-size: 2vw;
+    }
+
+    .clr {
+        width: 150px;
+        height: 180px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1vw;
+        padding: 1.5vw 1vw;
+        align-items: center;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: rgb(255, 255, 255);
+    }
+
+    .clr i {
+        padding: 1vw;
+    }
+
+    .bg {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+    }
+
+    .one {
+        background: #ff91fb;
+    }
+
+    .two {
+        background: #00ffff;
+    }
+
+    .three {
+        background: #00fe9d;
+    }
+
+    .four {
+        background: #ffdc673b;
+    }
+</style> -->
+
+<body id="bclr" class="">
+    <div id="main">
+
+        <div class="toggle">
+            <div class="side">
+                <ul class="lnks">
+                    <li class="lkn"><a class="active" href="#hero">home</a></li>
+                    <li class="lkn"><a href="#about">about</a></li>
+                    <li class="lkn"><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SIDE BAR START -->
+        <div class="box2">
+            <div class="btn">
+                <i class="ri-settings-3-line"></i>
+            </div>
+            <div class="clr">
+
+                <div class="one bg" onclick="changeBackground('#ff91fb36','#ff91fb')"></div>
+                <div class="two bg" onclick="changeBackground('#00ffff34','#88ffff')"></div>
+                <div class="three bg" onclick="changeBackground('#00fe9d3a','#7fffce')"></div>
+                <div class="four bg" onclick="changeBackground('#ffdc673b','#ffe283')"></div>
+            </div>
+        </div>
+        <!-- SIDE BAR END -->
+
+
+        <!-- SVG EFFECT START -->
+        <div class="span-1">
+            <div class="span-01"></div>
+        </div>
+        <div class="span-2">
+            <div class="span-02"></div>
+        </div>
+        <!-- SVG EFFECT END -->
+
+        <!-- NAV BAAR START -->
+        <nav>
+            <div class="nav-left">
+                <a href="#">LOGO</a>
+            </div>
+            <div class="nav-right">
+                <i class="ri-menu-3-line tggle"></i>
+            </div>
+        </nav>
+        <!-- NAV BAAR END -->
+
+
+        <!-- <div class="side">
+            <div class="navigation">
+                <a href="#hero">hero</a>
+                <a href="#about">about</a>
+                <a href="#contact">contact</a>
+            </div>
+        </div> -->
+        <!-- <div class="container"> -->
+        <section class="hero" id="hero">
+            <div class="h-lft">
+                <h3>HI, I'M A FREELANCER</h3>
+                <h1>LEARNER</h1>
+                <h2>based in Hajipur, Vaishali  .</h2>
+                <div class="btn">
+                    <a href="#">View My Work</a>
+                    <a class="b-rght" href="#contact">Contact Me</a>
+                </div>
+            </div>
+
+            <!-- <div class="h-rght">
+                <div class="img">
+                    <img src="./hero.png" alt="">
+                </div>
+            </div> -->
+
+            <div class="h-rght circle">
+                <div class="cover-img">
+                    <img src="/Rohit_face3.jpg" alt="">
+                </div>
+                <div class="top-wave" id="cir-1"></div>
+                <div class="top-wave" id="cir-2"></div>
+                <div class="top-wave" id="cir-3"></div>
+                <div class="btm-wave" id="cir-4"></div>
+                <div class="btm-wave" id="cir-5"></div>
+                <div class="btm-wave" id="cir-6"></div>
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-top">
+                <h1 class="abs">ABOUT ME</h1>
+                <h3>Some Word About me</h3>
+                <h1>know me more</h1>
+            </div>
+            <div class="about-bottum">
+                <div class="a-lft">
+                    <div class="l-top">
+                        <h2>I'm Rohit, a Web Developer</h2>
+                        <p>
+                            I’m Rohit, a future web developer currently pursuing BCA. I enjoy designing and developing
+                            user-friendly websites that work smoothly on all devices. I have hands-on experience with
+                            HTML, CSS, and JavaScript, and I’m continuously improving my skills to become a full-stack
+                            developer. I believe in writing clean code, crafting modern designs, and building projects
+                            that solve real-world problems.</p>
+                    </div>
+                    <div class="l-bottum">
+                        <div class="eml lb">
+                            <p>Email : </p>
+                            <p>therohitraj02@gmail.com</p>
+                        </div>
+                        <div class="dob lb">
+                            <p>Date of Birth : </p>
+                            <p>18/07/2002</p>
+                        </div>
+                        <div class="address lb">
+                            <p>Address : </p>
+                            <p>Hajipur,Vaishali</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="a-rght">
+                    <div class="box">
+                        <div class="ba">
+                            <h1>0</h1>
+                            <p>Years of experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="about-top">
+                <h1 class="abs" id="abs">CONTACT</h1>
+                <h3>Let's get in touch</h3>
+                <h1>Contact me</h1>
+            </div>
+            <div class="links">
+                <div class="phone flex">
+                    <div class="lnk">
+                        <i class="ri-phone-line"></i>
+                    </div>
+                    <p>7362095502</p>
+                </div>
+                <div class="eml flex">
+                    <div class="lnk">
+                        <i class="ri-mail-line"></i>
+                    </div>
+                    <p>therohitraj02@gmial.com</p>
+                </div>
+                <div class="lctn flex">
+                    <div class="lnk">
+                        <i class="ri-map-pin-line"></i>
+                    </div>
+                    <p>Hajipur,Vaishali</p>
+                </div>
+                <div class="link">
+                    <div class="lnk">
+                        <i class="ri-linkedin-box-line"></i>
+                    </div>
+                    <div class="lnk">
+                        <i class="ri-instagram-line"></i>
+                    </div>
+                    <div class="lnk">
+                        <i class="ri-twitter-line"></i>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Leave a Message</h2>
+            <div class="form">
+                <div class="name-email">
+                    <div class="name">
+                        <label for="name">Name</label><br>
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label><br>
+                        <input type="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="msg">
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="" placeholder="Your message"></textarea>
+                </div>
+            </div>
+            <div class="submit">
+                <button>submit</button>
+            </div>
+        </section>
+
+        <!-- </div> -->
+    </div>
+
+
+    <script src="script.js"></script>
+    <script>
+
+
+        let btn = document.querySelector('.btn i')
+        let box = document.querySelector('.box2')
+        let tggle = document.querySelector('.tggle')
+        let toggle = document.querySelector('.toggle')
+
+        btn.addEventListener('click', () => {
+            box.classList.toggle('active')
+        })
+
+        function changeBackground(color, clr) {
+            document.body.style.backgroundColor = color;
+            toggle.style.backgroundColor = clr;
+
+        }
+
+
+
+
+
+        tggle.addEventListener('click', () => {
+            toggle.classList.toggle('showSideBar')
+        })
+
+
+    </script>
+</body>
+
+</html>
