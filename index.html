@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rohit's First Portfolio</title>
+    <link rel="shortcut icon" href="/img-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
-    
+
 <body id="bclr" class="">
+
     <div id="main">
 
+        <!-- FIXED SIDE BAAR START -->
         <div class="toggle">
             <div class="side">
                 <ul class="lnks">
@@ -21,6 +24,8 @@
                 </ul>
             </div>
         </div>
+        <!-- FIXED SIDE BAAR END -->
+
 
         <!-- SIDE BAR START -->
         <div class="box2">
@@ -29,10 +34,10 @@
             </div>
             <div class="clr">
 
-                <div class="one bg" onclick="changeBackground('#ff91fb36','#ff91fb')"></div>
-                <div class="two bg" onclick="changeBackground('#00ffff34','#88ffff')"></div>
-                <div class="three bg" onclick="changeBackground('#00fe9d3a','#7fffce')"></div>
-                <div class="four bg" onclick="changeBackground('#ffdc673b','#ffe283')"></div>
+                <div class="one bg" onclick="changeBackground('#ff91fb7f','#FF91FB')"></div>
+                <div class="two bg" onclick="changeBackground('#00fefe7d','#00FFFF')"></div>
+                <div class="three bg" onclick="changeBackground('#00fe9d7e','#00fe9d')"></div>
+                <div class="four bg" onclick="changeBackground('#ffdc677e','#ffdc67')"></div>
             </div>
         </div>
         <!-- SIDE BAR END -->
@@ -47,56 +52,54 @@
         </div>
         <!-- SVG EFFECT END -->
 
-        <!-- NAV BAAR START -->
+        <!-- TOP NAV BAAR START -->
         <nav>
             <div class="nav-left">
-                <a href="#">LOGO</a>
+                <div class="logo-img">
+                    <img src="/img-removebg-preview.png" alt="">
+                </div>
+                <!-- <a href="#"><span>R</span>ohit</a> -->
             </div>
             <div class="nav-right">
                 <i class="ri-menu-3-line tggle"></i>
             </div>
         </nav>
-        <!-- NAV BAAR END -->
+        <!-- TOP NAV BAAR END -->
 
 
-        <!-- <div class="side">
-            <div class="navigation">
-                <a href="#hero">hero</a>
-                <a href="#about">about</a>
-                <a href="#contact">contact</a>
-            </div>
-        </div> -->
-        <!-- <div class="container"> -->
+        <!-- HERO OR HOME SECTION START -->
         <section class="hero" id="hero">
             <div class="h-lft">
                 <h3>HI, I'M A FREELANCER</h3>
                 <h1>LEARNER</h1>
-                <h2>based in Hajipur, Vaishali  .</h2>
+                <h2>based in Hajipur, Vaishali.</h2>
                 <div class="btn">
-                    <a href="#">View My Work</a>
+                    <a class="l-btn" href="#">View My Work</a>
                     <a class="b-rght" href="#contact">Contact Me</a>
                 </div>
             </div>
 
             <div class="h-rght circle">
                 <div class="cover-img">
-                    <img src="Rohit_AI.png" alt="IMG">
+                    <img src="/Rohit_AI.png" alt="">
                 </div>
-                <div class="top-wave" id="cir-1"></div>
-                <div class="top-wave" id="cir-2"></div>
-                <div class="top-wave" id="cir-3"></div>
-                <div class="btm-wave" id="cir-4"></div>
-                <div class="btm-wave" id="cir-5"></div>
-                <div class="btm-wave" id="cir-6"></div>
+                <div class="top-wave waves" id="cir-1"></div>
+                <div class="top-wave waves" id="cir-2"></div>
+                <div class="top-wave waves" id="cir-3"></div>
+                <div class="btm-wave waves" id="cir-4"></div>
+                <div class="btm-wave waves" id="cir-5"></div>
+                <div class="btm-wave waves" id="cir-6"></div>
             </div>
 
         </section>
+        <!-- HERO OR HOME SECTION END -->
 
+        <!-- ABOUT SECTION START -->
         <section class="about" id="about">
             <div class="about-top">
                 <h1 class="abs">ABOUT ME</h1>
                 <h3>Some Word About me</h3>
-                <h1>know me more</h1>
+                <h1>Know Me More</h1>
             </div>
             <div class="about-bottum">
                 <div class="a-lft">
@@ -105,7 +108,8 @@
                         <p>
                             I’m Rohit, a future web developer currently pursuing BCA. I enjoy designing and developing
                             user-friendly websites that work smoothly on all devices. I have hands-on experience with
-                            HTML, CSS, and JavaScript, and I’m continuously improving my skills to become a full-stack
+                            HTML, CSS, Tailwind CSS, JavaScript, and also React. I’m continuously improving my skills to
+                            become a full-stack
                             developer. I believe in writing clean code, crafting modern designs, and building projects
                             that solve real-world problems.</p>
                     </div>
@@ -134,7 +138,9 @@
                 </div>
             </div>
         </section>
+        <!-- ABOUT SECTION END -->
 
+        <!-- CONTACT SECTION START -->
         <section class="contact" id="contact">
             <div class="about-top">
                 <h1 class="abs" id="abs">CONTACT</h1>
@@ -174,54 +180,67 @@
             </div>
 
             <h2>Leave a Message</h2>
-            <div class="form">
-                <div class="name-email">
-                    <div class="name">
-                        <label for="name">Name</label><br>
-                        <input type="text" placeholder="Your name">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="b3f8278c-73cd-461a-9f5a-129ac83d9a69">
+                <div class="form">
+                    <div class="name-email">
+                        <div class="name">
+                            <label for="name">Name</label><br>
+                            <input type="text" placeholder="Your name" name="text" required>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label><br>
+                            <input type="email" placeholder="Email" name="email" required>
+                        </div>
                     </div>
-                    <div class="email">
-                        <label for="email">Email</label><br>
-                        <input type="email" placeholder="Email">
+                    <div class="msg">
+                        <label for="message">Message</label><br>
+                        <textarea name="message" id="" placeholder="Your message" required></textarea>
                     </div>
                 </div>
-                <div class="msg">
-                    <label for="message">Message</label><br>
-                    <textarea name="message" id="" placeholder="Your message"></textarea>
+                <div class="submit">
+                    <div class="button">
+                        <button type="submit">submit</button>
+                        <div class="top-wave waves" id="cir-1"></div>
+                        <div class="top-wave waves" id="cir-2"></div>
+                        <div class="top-wave waves" id="cir-3"></div>
+                        <div class="btm-wave waves" id="cir-4"></div>
+                        <div class="btm-wave waves" id="cir-5"></div>
+                        <div class="btm-wave waves" id="cir-6"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="submit">
-                <button>submit</button>
-            </div>
+            </form>
         </section>
+        <!-- CONTACT SECTION END -->
 
-        <!-- </div> -->
     </div>
 
 
     <script src="script.js"></script>
     <script>
 
+        // document.body.style.backgroundColor = '#ffdc677e'
+
 
         let btn = document.querySelector('.btn i')
-        let box = document.querySelector('.box2')
+        let box2 = document.querySelector('.box2')
+        let box = document.querySelector('.box')
         let tggle = document.querySelector('.tggle')
         let toggle = document.querySelector('.toggle')
 
+        // SIDE BAAR BACKGROUND COLOR CHANGER START
         btn.addEventListener('click', () => {
-            box.classList.toggle('active')
+            box2.classList.toggle('active')
         })
-
         function changeBackground(color, clr) {
             document.body.style.backgroundColor = color;
             toggle.style.backgroundColor = clr;
-
+            box.style.backgroundColor = clr;
         }
+        // SIDE BAAR BACKGROUND COLOR CHANGER END
 
 
-
-
-
+        // SIDE NAV BAAR SLIDE EFFECT
         tggle.addEventListener('click', () => {
             toggle.classList.toggle('showSideBar')
         })
