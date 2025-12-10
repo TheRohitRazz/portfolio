@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rohit's First Portfolio</title>
-    <link rel="shortcut icon" href="img-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
@@ -56,7 +56,7 @@
         <nav>
             <div class="nav-left">
                 <div class="logo-img">
-                    <img src="img-removebg-preview.png" alt="">
+                    <img src="/img-removebg-preview.png" alt="">
                 </div>
                 <!-- <a href="#"><span>R</span>ohit</a> -->
             </div>
@@ -70,9 +70,9 @@
         <!-- HERO OR HOME SECTION START -->
         <section class="hero" id="hero">
             <div class="h-lft">
-                <h3>HI, I'M A FUTURE WEB</h3>
-                <h1>DEVELOPER</h1>
-                <h2>lives in Hajipur, Vaishali.</h2>
+                <h3>HI, I'M A FREELANCER</h3>
+                <h1>LEARNER</h1>
+                <h2>based in Hajipur, Vaishali.</h2>
                 <div class="btn">
                     <a class="l-btn" href="#">View My Work</a>
                     <a class="b-rght" href="#contact">Contact Me</a>
@@ -81,7 +81,7 @@
 
             <div class="h-rght circle">
                 <div class="cover-img">
-                    <img src="Rohit_AI.png" alt="">
+                    <img src="/Rohit_AI.png" alt="">
                 </div>
                 <div class="top-wave waves" id="cir-1"></div>
                 <div class="top-wave waves" id="cir-2"></div>
@@ -180,7 +180,9 @@
             </div>
 
             <h2>Leave a Message</h2>
+
             <form action="https://api.web3forms.com/submit" method="POST">
+
                 <input type="hidden" name="access_key" value="b3f8278c-73cd-461a-9f5a-129ac83d9a69">
                 <div class="form">
                     <div class="name-email">
@@ -227,6 +229,7 @@
         let box = document.querySelector('.box')
         let tggle = document.querySelector('.tggle')
         let toggle = document.querySelector('.toggle')
+        let button = document.querySelector('.button button')
 
         // SIDE BAAR BACKGROUND COLOR CHANGER START
         btn.addEventListener('click', () => {
@@ -236,6 +239,7 @@
             document.body.style.backgroundColor = color;
             toggle.style.backgroundColor = clr;
             box.style.backgroundColor = clr;
+            button.style.backgroundColor = clr;
         }
         // SIDE BAAR BACKGROUND COLOR CHANGER END
 
@@ -244,6 +248,10 @@
         tggle.addEventListener('click', () => {
             toggle.classList.toggle('showSideBar')
         })
+        // button.addEventListener('click', () => {
+        //     alert('click huaa')
+        // })
+
 
 
     </script>
