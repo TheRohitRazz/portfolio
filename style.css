@@ -1,6 +1,6 @@
 @font-face {
     font-family: myFont;
-    src: url(Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2);
+    src: url(/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.ttf);
 }
 
 
@@ -785,11 +785,11 @@ textarea {
     scale: .98;
 }
 
-.button button {
-    width: 100%;
-    height: 100%;
+button {
     z-index: 1;
     position: absolute;
+    width: 100%;
+    height: 100%;
     background: transparent;
     font-size: 1.6vw;
     border-radius: inherit;
@@ -876,11 +876,11 @@ textarea {
 
     .h-lft h2 {
         font-size: 5vw;
-        margin-top: 2.5vw;
+        margin-top: 2vw;
     }
 
     .h-lft h1 {
-        margin-top: 1.5vw;
+        margin-top: 2vw;
         font-size: 10vw;
         font-weight: bolder;
     }
@@ -960,9 +960,9 @@ textarea {
     }
 
     .l-top p {
-        line-height: 7vw;
+        line-height: 6vw;
         margin-top: 5vh;
-        font-size: 3.9vw;
+        font-size: 3.8vw;
     }
 
     .l-bottum {
