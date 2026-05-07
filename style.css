@@ -696,7 +696,7 @@ nav {
     font-size: 1.3vw;
 }
 
-.link .lnk:hover {
+.link .lnk:hover, .lnk:hover a {
     background: black;
     color: white;
 }
@@ -704,6 +704,10 @@ nav {
 .link .lnk {
     width: 60px;
     height: 60px;
+}
+.error:hover{
+    background: red;
+    color: white;
 }
 
 
