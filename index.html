@@ -168,14 +168,15 @@
                 </div>
                 <div class="link">
                     <div class="lnk">
-                        <i class="ri-linkedin-box-line"></i>
+                        <a target="_blank" href="https://www.linkedin.com/in/therohit02?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="ri-linkedin-box-line"></i></a>
+                        
                     </div>
                     <div class="lnk">
                           <a target="_blank" href="https://www.instagram.com/therohitraj02?igsh=dHY1dm9lYTkweXVt"><i class="ri-instagram-line"></i></a>
                         
                     </div>
                     <div class="lnk">
-                        <i class="ri-twitter-line"></i>
+                        <i onclick="vibratePhone()" class="ri-twitter-line"></i>
                     </div>
                 </div>
             </div>
@@ -253,6 +254,13 @@
         //     alert('click huaa')
         // })
 
+  
+  
+  function vibratePhone() {
+    if (navigator.vibrate) {
+      navigator.vibrate(100); // 100 milliseconds vibration
+    }
+  }
 
 
     </script>
