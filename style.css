@@ -700,6 +700,10 @@ nav {
     background: black;
     color: white;
 }
+.link .lnk:hover a {
+    
+    color: white;
+ }
 
 .link .lnk {
     width: 60px;
