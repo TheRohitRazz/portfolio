@@ -696,7 +696,7 @@ nav {
     font-size: 1.3vw;
 }
 
-.link .lnk:hover, .lnk:hover a {
+.link .lnk:hover {
     background: black;
     color: white;
 }
@@ -705,7 +705,7 @@ nav {
     width: 60px;
     height: 60px;
 }
-.error:hover{
+.link #error:hover{
     background: red;
     color: white;
 }
